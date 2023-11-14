@@ -1,0 +1,55 @@
+package controller;
+
+import javafx.scene.control.ProgressBar;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+import model.Ball;
+import model.Canon;
+import model.MainBall;
+import view.*;
+
+public class MultiPlayController {
+    public static MultiPlay multiPlay;
+    private MainBall mainBall;
+
+    public MainBall getMainBall() {
+        return mainBall;
+    }
+
+    public void setMainBall(MainBall mainBall) {
+        this.mainBall = mainBall;
+    }
+
+    public void moveLeft(Canon canon) {
+        if (canon.getX() > 20)
+            canon.setX(canon.getX() - 10);
+    }
+
+    public void moveRight(Canon canon) {
+        if (canon.getX() < 718)
+            canon.setX(canon.getX() + 10);
+    }
+
+    public void shoot(Canon rocket, Pane gamePane, ProgressBar progressBar) {
+        Ball laser = new Ball(rocket);
+        gamePane.getChildren().add(laser);
+        ShootingAnimation shootingAnimation = new ShootingAnimation(gamePane, rocket, laser, progressBar);
+        shootingAnimation.play();
+    }
+
+    public void back() throws Exception {
+        new ScoreGame().start(LoginMenu.stage);
+    }
+
+    public void pause() throws Exception {
+        for (int i = 0; i < Game.animations.size(); i++) {
+            Game.animations.get(i).pause();
+
+        }
+        for (int i = 0; i < Game.timelines.size(); i++) {
+            Game.timelines.get(i).pause();
+        }
+        PauseMenuController.stage = new Stage();
+        new PauseMenu().start(PauseMenuController.stage);
+    }
+}

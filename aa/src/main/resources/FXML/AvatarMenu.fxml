@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AvatarMenuController">
+    <children>
+        <Button layoutX="268.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="33.0" prefWidth="63.0" text="back" textFill="#c91c1c">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <Button onMouseClicked="#chooseFromFiles" layoutX="215.0" layoutY="292.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" text="choose from your files" />
+      <ImageView onMouseClicked="#Avatar1" fitHeight="86.0" fitWidth="127.0" layoutX="22.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/avatar1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#Avatar2" fitHeight="86.0" fitWidth="127.0" layoutX="459.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/avatar2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#Avatar3" fitHeight="86.0" fitWidth="127.0" layoutX="165.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/avatar3.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#Avatar4" fitHeight="86.0" fitWidth="127.0" layoutX="300.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/avatar4.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</Pane>

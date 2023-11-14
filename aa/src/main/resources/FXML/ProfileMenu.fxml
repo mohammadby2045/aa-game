@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;"
+      xmlns="http://javafx.com/javafx/19" fx:controller="controller.ProfileMenuController">
+    <children>
+        <Button layoutX="54.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#changePassword" prefHeight="40.0"
+                prefWidth="133.0" text="change password" textFill="#b91515">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <Button layoutX="46.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#deleteAccount" prefHeight="40.0"
+                prefWidth="120.0" text="delete account" textFill="#b91515">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <Button layoutX="413.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#changeUsername"
+                prefHeight="40.0" prefWidth="133.0" text="change username" textFill="#b91515">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <Button layoutX="437.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="40.0"
+                prefWidth="120.0" text="logout" textFill="#b91515">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <TextField alignment="CENTER" layoutX="405.0" layoutY="132.0" promptText="type your new username"
+                   style="-fx-background-color: yellow;" fx:id="username"/>
+        <PasswordField alignment="CENTER" layoutX="46.0" layoutY="132.0" promptText="type your old password"
+                       style="-fx-background-color: green;" fx:id="oldPass"/>
+        <PasswordField alignment="CENTER" layoutX="46.0" layoutY="188.0" promptText="type your new password"
+                       style="-fx-background-color: green;" fx:id="newPass"/>
+        <Button layoutX="269.0" layoutY="251.0" mnemonicParsing="false" prefHeight="33.0" onMouseClicked="#back"
+                prefWidth="63.0" text="back" textFill="#c91c1c">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <ImageView fitHeight="68.0" fitWidth="120.0" layoutX="241.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" fx:id="image">
+        </ImageView>
+        <Button onMouseClicked="#chooseAvatar" layoutX="255.0" layoutY="126.0" mnemonicParsing="false" text="choose avatar" />
+    </children>
+</Pane>

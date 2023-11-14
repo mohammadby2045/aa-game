@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScoreboardMenuController">
+   <children>
+      <Button layoutX="268.0" layoutY="334.0" mnemonicParsing="false" prefHeight="33.0" onMouseClicked="#back" prefWidth="63.0" text="back" textFill="#c91c1c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="label1" layoutX="15.0" layoutY="61.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: yellow;" textFill="#1e1e1c" />
+      <Label fx:id="label2" layoutX="15.0" layoutY="84.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: gray;" textFill="#1e1e1d" />
+      <Label fx:id="label3" layoutX="15.0" layoutY="108.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: orange;" textFill="#131311" />
+      <Label fx:id="label4" layoutX="15.0" layoutY="134.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: white;" textFill="#20201f" />
+      <Label fx:id="label5" layoutX="15.0" layoutY="159.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: white;" textFill="#20201f" />
+      <Label fx:id="label6" layoutX="15.0" layoutY="183.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: white;" textFill="#20201f" />
+      <Label fx:id="label7" layoutX="16.0" layoutY="209.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: white;" textFill="#20201f" />
+      <Label fx:id="label8" layoutX="15.0" layoutY="232.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: white;" textFill="#20201f" />
+      <Label fx:id="label9" layoutX="16.0" layoutY="257.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: white;" textFill="#20201f" />
+      <Label fx:id="label10" layoutX="16.0" layoutY="283.0" prefHeight="17.0" prefWidth="569.0" style="-fx-background-color: white;" textFill="#20201f" />
+      <Button layoutX="29.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="63.0" onMouseClicked="#refresh" text="refresh" textFill="#c91c1c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
